@@ -143,20 +143,20 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/membership"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors border border-blue-500"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors border border-blue-500 whitespace-nowrap"
                 >
-                  Membership Information
+                  Become a Member
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <Link
                   href="#programs"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30 whitespace-nowrap"
                 >
                   View Programs
                 </Link>
                 <Link
                   href="/about"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30 whitespace-nowrap"
                 >
                   About STCCI
                 </Link>
