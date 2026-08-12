@@ -140,7 +140,11 @@ export default function ContactPage() {
                 Inquiry Form
               </h2>
               <div className="w-20 h-1 bg-blue-600 mb-8"></div>
-              <form className="space-y-6">
+              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                <input type="hidden" name="subject" value="New Contact Form Submission from STCCI Website" />
+                <input type="hidden" name="redirect" value="https://stcci-website.com/thank-you" />
+
                 <div>
                   <label htmlFor="name" className="block text-sm font-bold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
                     Full Name *
@@ -148,6 +152,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     className="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-gray-300 dark:border-slate-600 focus:outline-none focus:border-blue-600 text-gray-900 dark:text-white"
                     placeholder="Enter your full name"
                     required
@@ -161,6 +166,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     className="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-gray-300 dark:border-slate-600 focus:outline-none focus:border-blue-600 text-gray-900 dark:text-white"
                     placeholder="your.email@example.com"
                     required
@@ -174,17 +180,19 @@ export default function ContactPage() {
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
                     className="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-gray-300 dark:border-slate-600 focus:outline-none focus:border-blue-600 text-gray-900 dark:text-white"
                     placeholder="+233 XXX XXX XXX"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-bold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
+                  <label htmlFor="inquiry_subject" className="block text-sm font-bold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
                     Inquiry Subject *
                   </label>
                   <select
-                    id="subject"
+                    id="inquiry_subject"
+                    name="inquiry_subject"
                     className="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-gray-300 dark:border-slate-600 focus:outline-none focus:border-blue-600 text-gray-900 dark:text-white"
                     required
                   >
@@ -204,6 +212,7 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={6}
                     className="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-gray-300 dark:border-slate-600 focus:outline-none focus:border-blue-600 text-gray-900 dark:text-white"
                     placeholder="Provide details of your inquiry..."
