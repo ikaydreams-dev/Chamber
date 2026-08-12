@@ -131,12 +131,12 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Sekondi-Takoradi Chamber of Commerce & Industry (STCCI)
+                STCCI
               </h1>
 
               <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                The premier business organization in Ghana's Western Region,<br />
-                dedicated to advancing commercial and industrial interests through advocacy, capacity building, and strategic partnerships.
+                Ghana's Western Region Premier Business Organization<br />
+                Advancing Commerce & Industry Since the 19th Century
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
