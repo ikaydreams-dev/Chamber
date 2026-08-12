@@ -116,67 +116,8 @@ const stats = [
 export default function Home() {
   return (
     <div className="relative">
-      {/* Hero Section - Formal */}
-      <section className="relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900 dark:to-slate-900 py-8 sm:py-12 lg:py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-50"></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-950/50 border border-blue-300 dark:border-blue-800/30 px-4 py-2 rounded-md mb-8">
-                <Award className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                <span className="text-sm font-medium text-blue-900 dark:text-blue-200">
-                  Established in the 19th Century
-                </span>
-              </div>
-
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                STCCI
-              </h1>
-
-              <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                Ghana's Western Region Premier Business Organization<br />
-                Advancing Commerce & Industry Since the 19th Century
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/membership"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors border border-blue-500 whitespace-nowrap"
-                >
-                  Become a Member
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-                <Link
-                  href="#programs"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30 whitespace-nowrap"
-                >
-                  View Programs
-                </Link>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30 whitespace-nowrap"
-                >
-                  About STCCI
-                </Link>
-              </div>
-            </div>
-
-            {/* Large Professional Icon */}
-            <div className="hidden lg:flex items-center justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-blue-600/20 blur-3xl"></div>
-                <div className="relative bg-gradient-to-br from-blue-600 to-blue-800 p-16 border-4 border-blue-500/30">
-                  <Building2 className="w-64 h-64 text-white" strokeWidth={1.5} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Programs Grid - Formal */}
-      <section id="programs" className="py-24 bg-white dark:bg-slate-900 scroll-mt-20">
+      <section id="programs" className="pt-24 pb-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
