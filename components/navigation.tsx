@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { ThemeToggle } from "./theme-toggle"
 import { Menu, X } from "lucide-react"
@@ -26,13 +25,10 @@ export function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
+            <img
               src="/logo.jpeg"
               alt="STCCI - Sekondi-Takoradi Chamber of Commerce & Industry"
-              width={200}
-              height={60}
               className="h-12 w-auto"
-              priority
             />
           </Link>
 

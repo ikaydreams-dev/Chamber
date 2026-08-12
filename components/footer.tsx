@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Mail, Phone, MapPin, Circle } from "lucide-react"
 
 const programs = [
@@ -27,11 +26,9 @@ export function Footer() {
           {/* About */}
           <div>
             <div className="mb-6">
-              <Image
+              <img
                 src="/logo.jpeg"
                 alt="STCCI"
-                width={180}
-                height={54}
                 className="h-auto w-48 brightness-0 invert"
               />
               <div className="text-xs text-gray-400 mt-2">Est. 19th Century</div>
