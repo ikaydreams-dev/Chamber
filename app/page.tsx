@@ -149,6 +149,12 @@ export default function Home() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <Link
+                  href="#programs"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30"
+                >
+                  View Programs
+                </Link>
+                <Link
                   href="/about"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30"
                 >
@@ -171,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* Programs Grid - Formal */}
-      <section className="py-24 bg-white dark:bg-slate-900">
+      <section id="programs" className="py-24 bg-white dark:bg-slate-900 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
