@@ -27,9 +27,9 @@ export function Footer() {
           <div>
             <div className="mb-6">
               <img
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="STCCI"
-                className="h-auto w-48 bg-white px-3 py-2 border border-gray-700"
+                className="h-auto w-56"
               />
               <div className="text-xs text-gray-400 mt-2">Est. 19th Century</div>
             </div>

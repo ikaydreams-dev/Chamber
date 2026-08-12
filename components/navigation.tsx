@@ -26,9 +26,9 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="STCCI - Sekondi-Takoradi Chamber of Commerce & Industry"
-              className="h-12 w-auto bg-white px-3 py-2 border border-gray-200 dark:border-gray-700"
+              className="h-16 w-auto"
             />
           </Link>
 
