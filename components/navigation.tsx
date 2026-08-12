@@ -7,6 +7,7 @@ import { ThemeToggle } from "./theme-toggle"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Programs", href: "/programs" },
   { name: "Membership", href: "/membership" },
@@ -36,7 +37,7 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
-              const isActive = pathname === item.href || pathname?.startsWith(item.href + '/')
+              const isActive = item.href === "/" ? pathname === "/" : pathname?.startsWith(item.href)
               return (
                 <Link
                   key={item.name}
@@ -77,7 +78,7 @@ export function Navigation() {
         <div className="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800">
           <div className="px-4 pt-4 pb-6 space-y-1">
             {navItems.map((item) => {
-              const isActive = pathname === item.href || pathname?.startsWith(item.href + '/')
+              const isActive = item.href === "/" ? pathname === "/" : pathname?.startsWith(item.href)
               return (
                 <Link
                   key={item.name}
