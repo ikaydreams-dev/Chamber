@@ -117,10 +117,10 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Hero Section - Formal */}
-      <section className="relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900 dark:to-slate-900 py-12 sm:py-16 lg:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900 dark:to-slate-900 py-8 sm:py-12 lg:py-16 overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-50"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-950/50 border border-blue-300 dark:border-blue-800/30 px-4 py-2 rounded-md mb-8">
@@ -131,13 +131,12 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Sekondi-Takoradi<br />
-                Chamber of Commerce & Industry
+                Sekondi-Takoradi Chamber of Commerce & Industry (STCCI)
               </h1>
 
               <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                The premier business organization in Ghana's Western Region, dedicated to advancing
-                commercial and industrial interests through advocacy, capacity building, and strategic partnerships.
+                The premier business organization in Ghana's Western Region,<br />
+                dedicated to advancing commercial and industrial interests through advocacy, capacity building, and strategic partnerships.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
