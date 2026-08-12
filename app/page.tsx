@@ -21,13 +21,6 @@ import {
 
 const programs = [
   {
-    icon: Newspaper,
-    title: "WESCCU Newsletter",
-    description: "Monthly business intelligence and updates for the Western Region",
-    href: "/programs/newsletter",
-    color: "from-blue-500 to-blue-700",
-  },
-  {
     icon: Smartphone,
     title: "STCCI App",
     description: "Manage your business anywhere with our mobile platform",
