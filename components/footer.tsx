@@ -39,10 +39,10 @@ export function Footer() {
               business interests and economic development.
             </p>
             <div className="flex space-x-3">
-              <a href="https://facebook.com/STCCIGh" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-500 hover:bg-blue-500/10 transition-colors" title="Facebook" aria-label="Facebook">
+              <a href="http://www.facebook.com/stccigh" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-500 hover:bg-blue-500/10 transition-colors" title="Facebook" aria-label="Facebook">
                 <Circle className="w-4 h-4 text-gray-400" fill="currentColor" />
               </a>
-              <a href="https://twitter.com/STCCI_Ghana" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-colors" title="Twitter" aria-label="Twitter">
+              <a href="https://x.com/stcci_ghana" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-colors" title="X (Twitter)" aria-label="X (Twitter)">
                 <Circle className="w-4 h-4 text-gray-400" fill="currentColor" />
               </a>
               <a href="#" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-600 hover:bg-blue-600/10 transition-colors" title="LinkedIn" aria-label="LinkedIn">
@@ -89,7 +89,7 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-gray-400 leading-relaxed">
-                  Sekondi-Takoradi<br />Western Region, Ghana
+                  7 St. Francis Street, Anaji<br />Sekondi-Takoradi<br />Western Region, Ghana
                 </span>
               </li>
               <li className="flex items-center space-x-3">

@@ -46,6 +46,7 @@ export default function ContactPage() {
                         Physical Address
                       </h3>
                       <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        7 St. Francis Street, Anaji<br />
                         Sekondi-Takoradi<br />
                         Western Region<br />
                         Ghana
@@ -94,7 +95,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex space-x-3">
                   <a
-                    href="https://facebook.com/STCCIGh"
+                    href="http://www.facebook.com/stccigh"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Facebook"
@@ -104,11 +105,11 @@ export default function ContactPage() {
                     <Circle className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="currentColor" />
                   </a>
                   <a
-                    href="https://twitter.com/STCCI_Ghana"
+                    href="https://x.com/stcci_ghana"
                     target="_blank"
                     rel="noopener noreferrer"
-                    title="Twitter"
-                    aria-label="Twitter"
+                    title="X (Twitter)"
+                    aria-label="X (Twitter)"
                     className="w-10 h-10 border border-gray-300 dark:border-slate-600 flex items-center justify-center hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors"
                   >
                     <Circle className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="currentColor" />
@@ -232,7 +233,7 @@ export default function ContactPage() {
             </h2>
             <div className="w-20 h-1 bg-blue-600"></div>
             <p className="text-lg text-gray-600 dark:text-gray-400 mt-6">
-              STCCI is strategically located in Sekondi-Takoradi, the commercial hub of Ghana's Western Region.
+              STCCI is strategically located at 7 St. Francis Street, Anaji in Sekondi-Takoradi, the commercial hub of Ghana's Western Region.
             </p>
           </div>
           <div className="bg-gray-300 dark:bg-slate-800 border border-gray-400 dark:border-slate-700 h-96 flex items-center justify-center">
@@ -242,7 +243,7 @@ export default function ContactPage() {
                 Google Maps Integration
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
-                Sekondi-Takoradi, Western Region
+                7 St. Francis Street, Anaji, Sekondi-Takoradi
               </p>
             </div>
           </div>
