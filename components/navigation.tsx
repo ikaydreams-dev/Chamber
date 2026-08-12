@@ -28,7 +28,7 @@ export function Navigation() {
             <img
               src="/logo.jpeg"
               alt="STCCI - Sekondi-Takoradi Chamber of Commerce & Industry"
-              className="h-12 w-auto"
+              className="h-12 w-auto bg-white px-3 py-2 border border-gray-200 dark:border-gray-700"
             />
           </Link>
 
