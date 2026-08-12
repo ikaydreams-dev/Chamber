@@ -117,9 +117,9 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Programs Grid - Formal */}
-      <section id="programs" className="pt-24 pb-24 bg-white dark:bg-slate-900">
+      <section id="programs" className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16">
+          <div className="mb-8 md:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               <span className="hidden md:inline">Sekondi-Takoradi Chamber of Commerce and Industry - </span>STCCI
             </h2>
