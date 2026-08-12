@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin, Circle } from "lucide-react"
 
 const programs = [
@@ -25,14 +26,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* About */}
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-blue-600 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">ST</span>
-              </div>
-              <div>
-                <div className="font-bold text-lg text-white">STCCI</div>
-                <div className="text-xs text-gray-400">Est. 19th Century</div>
-              </div>
+            <div className="mb-6">
+              <Image
+                src="/logo.jpeg"
+                alt="STCCI"
+                width={180}
+                height={54}
+                className="h-auto w-48 brightness-0 invert"
+              />
+              <div className="text-xs text-gray-400 mt-2">Est. 19th Century</div>
             </div>
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
               The premier chamber of commerce serving Ghana's Western Region, dedicated to advancing

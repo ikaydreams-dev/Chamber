@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { ThemeToggle } from "./theme-toggle"
 import { Menu, X } from "lucide-react"
@@ -24,14 +25,15 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-blue-600 flex items-center justify-center">
-              <span className="text-white font-bold text-lg">ST</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-lg text-gray-900 dark:text-white leading-tight">STCCI</span>
-              <span className="text-xs text-gray-600 dark:text-gray-400">Chamber of Commerce</span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.jpeg"
+              alt="STCCI - Sekondi-Takoradi Chamber of Commerce & Industry"
+              width={200}
+              height={60}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
