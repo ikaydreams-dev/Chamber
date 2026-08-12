@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Circle, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Send } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -102,7 +102,7 @@ export default function ContactPage() {
                     aria-label="Facebook"
                     className="w-10 h-10 border border-gray-300 dark:border-slate-600 flex items-center justify-center hover:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors"
                   >
-                    <Circle className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="currentColor" />
+                    <Facebook className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                   </a>
                   <a
                     href="https://x.com/stcci_ghana"
@@ -112,7 +112,7 @@ export default function ContactPage() {
                     aria-label="X (Twitter)"
                     className="w-10 h-10 border border-gray-300 dark:border-slate-600 flex items-center justify-center hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors"
                   >
-                    <Circle className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="currentColor" />
+                    <Twitter className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                   </a>
                   <a
                     href="#"
@@ -120,7 +120,7 @@ export default function ContactPage() {
                     aria-label="LinkedIn"
                     className="w-10 h-10 border border-gray-300 dark:border-slate-600 flex items-center justify-center hover:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-colors"
                   >
-                    <Circle className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="currentColor" />
+                    <Linkedin className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                   </a>
                   <a
                     href="#"
@@ -128,7 +128,7 @@ export default function ContactPage() {
                     aria-label="Instagram"
                     className="w-10 h-10 border border-gray-300 dark:border-slate-600 flex items-center justify-center hover:border-pink-600 hover:bg-pink-50 dark:hover:bg-pink-950/20 transition-colors"
                   >
-                    <Circle className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="currentColor" />
+                    <Instagram className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                   </a>
                 </div>
               </div>
