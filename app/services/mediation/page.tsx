@@ -6,7 +6,7 @@ export default function MediationPage() {
     <div className="min-h-screen bg-white dark:bg-slate-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <Link
-          href="/programs"
+          href="/"
           className="inline-flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 mb-8"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
