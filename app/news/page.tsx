@@ -1,5 +1,8 @@
-import { Newspaper, Calendar, ExternalLink, Shield, ShoppingCart, Building2 } from "lucide-react"
+"use client"
+
+import { Newspaper, Calendar, ExternalLink, Shield, ShoppingCart, Building2, X } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
 
 const newsItems = [
   {
@@ -47,6 +50,16 @@ const newsItems = [
 ]
 
 export default function NewsPage() {
+  const [iframeUrl, setIframeUrl] = useState<string | null>(null)
+
+  const openIframe = (url: string) => {
+    setIframeUrl(url)
+  }
+
+  const closeIframe = () => {
+    setIframeUrl(null)
+  }
+
   return (
     <div>
       {/* Hero Section */}
@@ -116,15 +129,13 @@ export default function NewsPage() {
                             ))}
                           </ul>
                         </div>
-                        <a
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          onClick={() => openIframe(item.link)}
                           className="inline-flex items-center text-blue-600 dark:text-blue-400 font-semibold hover:underline"
                         >
                           Read Full Article
                           <ExternalLink className="ml-2 w-4 h-4" />
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -152,6 +163,30 @@ export default function NewsPage() {
           </Link>
         </div>
       </section>
+
+      {/* Iframe Modal */}
+      {iframeUrl && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+          <div className="relative w-full h-full max-w-7xl bg-white dark:bg-slate-900 shadow-2xl flex flex-col">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-slate-700">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Article</h3>
+              <button
+                onClick={closeIframe}
+                className="p-2 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+              </button>
+            </div>
+            <iframe
+              src={iframeUrl}
+              className="flex-1 w-full border-0"
+              title="Article Content"
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+            />
+          </div>
+        </div>
+      )}
     </div>
   )
 }
