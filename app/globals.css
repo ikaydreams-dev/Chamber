@@ -3,24 +3,104 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
+/* Dark mode with class */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* Dark mode with media query as fallback */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure body background is applied */
+html, body {
+  min-height: 100%;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+html.dark {
+  background-color: #0a0a0a;
+}
+
+/* Apple-inspired smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(243 244 246);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgb(17 24 39);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(156 163 175);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(75 85 99);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(107 114 128);
+}
+
+/* Professional corporate styling */
+.professional-gradient {
+  background: linear-gradient(135deg, rgb(15 23 42) 0%, rgb(30 41 59) 100%);
+}
+
+.dark .professional-gradient {
+  background: linear-gradient(135deg, rgb(2 6 23) 0%, rgb(15 23 42) 100%);
+}
+
+/* Formal text accent */
+.text-accent {
+  color: rgb(37 99 235);
+}
+
+.dark .text-accent {
+  color: rgb(96 165 250);
+}
+
+/* Professional divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(203 213 225), transparent);
+}
+
+.dark .divider {
+  background: linear-gradient(90deg, transparent, rgb(51 65 85), transparent);
 }

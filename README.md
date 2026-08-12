@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# STCCI Website
 
-## Getting Started
+Modern, Apple-inspired website for the Sekondi-Takoradi Chamber of Commerce & Industry (STCCI) built with Next.js 16, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🌟 Features
 
+- **Apple-Inspired Design**: Clean, modern UI with smooth animations and glassmorphism effects
+- **Dark/Light Theme**: Seamless theme switching with system preference detection
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop devices
+- **13 Core Programs**: Comprehensive pages for all STCCI programs and services
+- **Performance Optimized**: Built with Next.js 16 and Turbopack for blazing-fast development
+- **Accessibility**: WCAG compliant with keyboard navigation support
+- **SEO Ready**: Optimized meta tags and semantic HTML
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 16.3.0 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with custom Apple-inspired animations
+- **Icons**: Lucide React
+- **Theme**: next-themes for dark/light mode
+- **Font**: Inter (Google Fonts)
+
+## 📋 Prerequisites
+
+- Node.js 18.18 or later
+- npm or yarn
+
+## 🛠️ Installation & Development
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+stcci-website/
+├── app/
+│   ├── about/              # About STCCI page
+│   ├── contact/            # Contact page
+│   ├── membership/         # Membership information
+│   ├── programs/           # Programs overview and individual pages
+│   │   ├── chambers-market/
+│   │   ├── newsletter/
+│   │   ├── scholars-aid/
+│   │   ├── bright-start/
+│   │   ├── app/
+│   │   ├── podcast/
+│   │   └── projects/
+│   ├── services/           # Services pages
+│   │   ├── health-safety/
+│   │   ├── mediation/
+│   │   ├── geiscon/
+│   │   ├── training/
+│   │   └── information-centre/
+│   ├── layout.tsx         # Root layout with navigation and footer
+│   ├── page.tsx           # Homepage
+│   └── globals.css        # Global styles
+├── components/
+│   ├── navigation.tsx     # Header navigation
+│   ├── footer.tsx         # Footer component
+│   ├── theme-provider.tsx # Theme context provider
+│   └── theme-toggle.tsx   # Dark/light mode toggle
+└── public/               # Static assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Design System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Colors
+- **Primary**: Blue (600-800)
+- **Secondary**: Purple, Green, Orange, etc. for different programs
+- **Background**: White/Gray-50 (light) | Gray-900/950 (dark)
+- **Text**: Gray-900 (light) | White (dark)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Typography
+- **Font Family**: Inter
+- **Headings**: Bold, 5xl-7xl for hero sections
+- **Body**: Regular, text-base to xl
 
-## Deploy on Vercel
+### Animations
+- **Blob Animation**: Floating background elements
+- **Hover Effects**: Scale and shadow transitions
+- **Smooth Scrolling**: Native smooth scroll behavior
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm start        # Start production server
+npm run lint     # Run ESLint
+```
+
+## 🌐 Pages Overview
+
+### Main Pages
+- **Homepage**: Hero section, 13 programs grid, stats, features, CTAs
+- **About**: History, vision/mission, values, timeline
+- **Programs**: Overview of all 7 programs
+- **Membership**: Benefits, pricing plans, application
+- **Contact**: Contact information, form, map
+
+### Program Pages (7)
+1. **WESCCU Newsletter**: Monthly business intelligence
+2. **STCCI App**: Mobile platform for business management
+3. **Tertiary Scholars' Aid**: Scholarship program (120 students)
+4. **Bright Start**: Youth entrepreneurship program
+5. **ChambersMarket**: Digital marketplace (fully implemented)
+6. **STCCI Podcast**: Business podcast series
+7. **Business Projects**: Strategic development initiatives
+
+### Service Pages (6)
+1. **Health & Safety**: Workplace safety services
+2. **Mediation**: Business dispute resolution
+3. **GEISCon**: Annual safety conference
+4. **Training & Development**: 50+ training programs
+5. **Information Centre**: Business intelligence hub
+
+## 🎯 Key Features by Page
+
+### Homepage
+- Animated hero with gradient blobs
+- 13 program cards with icons and descriptions
+- Key statistics display
+- Feature highlights
+- Multiple CTAs
+
+### ChambersMarket Page
+- Product/service showcase
+- Pricing plans (Basic, Premium, Enterprise)
+- Features grid
+- Statistics counter
+- App download CTAs
+
+## 🎨 Theme Customization
+
+The website supports automatic dark/light theme switching. Custom theme colors are defined in `globals.css` using CSS variables.
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+All components are fully responsive with mobile-first design.
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Push code to GitHub
+2. Import repository in Vercel
+3. Deploy automatically
+
+### Build for Production
+```bash
+npm run build
+npm start
+```
+
+## 📄 License
+
+Copyright © 2026 Sekondi-Takoradi Chamber of Commerce & Industry. All rights reserved.
+
+## 📞 Support
+
+For technical support or questions:
+- Email: info@stcci.org.gh
+- Phone: +233 XXX XXX XXX
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Icons from [Lucide](https://lucide.dev/)
+- Fonts from [Google Fonts](https://fonts.google.com/)
+- Inspired by Apple's design philosophy
+
+---
+
+**Built with ❤️ for STCCI - Empowering Business Growth in Ghana's Western Region**

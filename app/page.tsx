@@ -1,69 +1,303 @@
-import Image from "next/image";
+import Link from "next/link"
+import {
+  Newspaper,
+  Smartphone,
+  GraduationCap,
+  Sparkles,
+  ShoppingCart,
+  Mic,
+  Shield,
+  Scale,
+  Users,
+  FolderKanban,
+  BookOpen,
+  Database,
+  ArrowRight,
+  TrendingUp,
+  Award,
+  Globe,
+  Building2,
+} from "lucide-react"
+
+const programs = [
+  {
+    icon: Newspaper,
+    title: "WESCCU Newsletter",
+    description: "Monthly business intelligence and updates for the Western Region",
+    href: "/programs/newsletter",
+    color: "from-blue-500 to-blue-700",
+  },
+  {
+    icon: Smartphone,
+    title: "STCCI App",
+    description: "Manage your business anywhere with our mobile platform",
+    href: "/programs/app",
+    color: "from-purple-500 to-purple-700",
+  },
+  {
+    icon: GraduationCap,
+    title: "Tertiary Scholars' Aid",
+    description: "120 students empowered through scholarships and support",
+    href: "/programs/scholars-aid",
+    color: "from-green-500 to-green-700",
+  },
+  {
+    icon: Sparkles,
+    title: "Bright Start",
+    description: "Nurturing young entrepreneurs and future business leaders",
+    href: "/programs/bright-start",
+    color: "from-yellow-500 to-yellow-700",
+  },
+  {
+    icon: ShoppingCart,
+    title: "ChambersMarket",
+    description: "Ghana's largest digital business marketplace",
+    href: "/programs/chambers-market",
+    color: "from-orange-500 to-orange-700",
+  },
+  {
+    icon: Mic,
+    title: "STCCI Podcast",
+    description: "Voices of Western Region commerce and industry",
+    href: "/programs/podcast",
+    color: "from-pink-500 to-pink-700",
+  },
+  {
+    icon: Shield,
+    title: "Health & Safety",
+    description: "Creating safer workplaces across all industries",
+    href: "/services/health-safety",
+    color: "from-red-500 to-red-700",
+  },
+  {
+    icon: Scale,
+    title: "Mediation Services",
+    description: "Resolve business disputes amicably and confidentially",
+    href: "/services/mediation",
+    color: "from-indigo-500 to-indigo-700",
+  },
+  {
+    icon: Users,
+    title: "GEISCon",
+    description: "Africa's premier occupational health & safety conference",
+    href: "/services/geiscon",
+    color: "from-cyan-500 to-cyan-700",
+  },
+  {
+    icon: FolderKanban,
+    title: "Business Projects",
+    description: "Driving economic development through strategic initiatives",
+    href: "/programs/projects",
+    color: "from-teal-500 to-teal-700",
+  },
+  {
+    icon: BookOpen,
+    title: "Training & Development",
+    description: "50+ programs to build business capacity and skills",
+    href: "/services/training",
+    color: "from-violet-500 to-violet-700",
+  },
+  {
+    icon: Database,
+    title: "Information Centre",
+    description: "Your business intelligence hub with market data and resources",
+    href: "/services/information-centre",
+    color: "from-fuchsia-500 to-fuchsia-700",
+  },
+]
+
+const stats = [
+  { value: "1,120+", label: "Member Enterprises" },
+  { value: "120", label: "Students Supported" },
+  { value: "7th Annual", label: "Safety Conference" },
+  { value: "1,000+", label: "Businesses on ChambersMarket" },
+]
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="relative">
+      {/* Hero Section - Formal */}
+      <section className="relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900 dark:to-slate-900 py-12 sm:py-16 lg:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-50"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-950/50 border border-blue-300 dark:border-blue-800/30 px-4 py-2 rounded-md mb-8">
+                <Award className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                <span className="text-sm font-medium text-blue-900 dark:text-blue-200">
+                  Established in the 19th Century
+                </span>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                Sekondi-Takoradi<br />
+                Chamber of Commerce & Industry
+              </h1>
+
+              <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+                The premier business organization in Ghana's Western Region, dedicated to advancing
+                commercial and industrial interests through advocacy, capacity building, and strategic partnerships.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/membership"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors border border-blue-500"
+                >
+                  Membership Information
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-transparent text-gray-900 dark:text-white font-semibold hover:bg-gray-100 dark:hover:bg-white/10 transition-colors border border-gray-300 dark:border-white/30"
+                >
+                  About STCCI
+                </Link>
+              </div>
+            </div>
+
+            {/* Large Professional Icon */}
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-blue-600/20 blur-3xl"></div>
+                <div className="relative bg-gradient-to-br from-blue-600 to-blue-800 p-16 border-4 border-blue-500/30">
+                  <Building2 className="w-64 h-64 text-white" strokeWidth={1.5} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Programs Grid - Formal */}
+      <section className="py-24 bg-white dark:bg-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Programs & Services
+            </h2>
+            <div className="w-20 h-1 bg-blue-600"></div>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mt-6">
+              STCCI offers comprehensive programs and services designed to support member enterprises
+              and drive economic development in the Western Region.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {programs.map((program, index) => {
+              const Icon = program.icon
+              return (
+                <Link
+                  key={index}
+                  href={program.href}
+                  className="group bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-blue-600 dark:hover:border-blue-500 transition-all duration-300 hover:shadow-lg"
+                >
+                  <div className="p-8">
+                    <div className="flex items-center mb-4">
+                      <div className={`p-3 bg-gradient-to-br ${program.color} text-white mr-4`}>
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                        {program.title}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                      {program.description}
+                    </p>
+                    <div className="flex items-center text-blue-600 dark:text-blue-400 font-medium text-sm">
+                      Learn more
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Value Proposition - Formal */}
+      <section className="py-24 bg-gray-50 dark:bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="border-l-4 border-blue-600 pl-6">
+              <TrendingUp className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Business Development
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Strategic support for market access, export opportunities, and sustainable
+                growth through our comprehensive business development programs.
+              </p>
+            </div>
+            <div className="border-l-4 border-blue-600 pl-6">
+              <BookOpen className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Professional Training
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Industry-leading training and capacity building programs designed to enhance
+                workforce competency and organizational excellence.
+              </p>
+            </div>
+            <div className="border-l-4 border-blue-600 pl-6">
+              <Users className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Advocacy & Networking
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Representing member interests in policy dialogue while facilitating strategic
+                partnerships and business-to-business connections.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - Formal */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 dark:from-slate-900 dark:to-blue-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                Join the Leading Chamber of Commerce
+              </h2>
+              <p className="text-lg text-blue-50 dark:text-gray-300 mb-6">
+                Become part of Ghana's premier business organization. STCCI membership provides
+                access to exclusive programs, networking opportunities, and advocacy support.
+              </p>
+              <div className="flex items-center text-blue-100 dark:text-gray-400 mb-2">
+                <div className="w-1 h-1 bg-blue-200 dark:bg-blue-400 rounded-full mr-3"></div>
+                Over 1,120 member enterprises
+              </div>
+              <div className="flex items-center text-blue-100 dark:text-gray-400 mb-2">
+                <div className="w-1 h-1 bg-blue-200 dark:bg-blue-400 rounded-full mr-3"></div>
+                Established business network
+              </div>
+              <div className="flex items-center text-blue-100 dark:text-gray-400">
+                <div className="w-1 h-1 bg-blue-200 dark:bg-blue-400 rounded-full mr-3"></div>
+                International affiliations
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <Link
+                href="/membership"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-blue-600 text-blue-600 dark:text-white font-semibold hover:bg-blue-50 dark:hover:bg-blue-700 transition-colors"
+              >
+                Apply for Membership
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold hover:bg-white/10 transition-colors border border-white/30"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
