@@ -121,7 +121,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Sekondi-Takoradi Chamber of Commerce and Industry - STCCI
+              <span className="hidden md:inline">Sekondi-Takoradi Chamber of Commerce and Industry - </span>STCCI
             </h2>
             <div className="w-20 h-1 bg-blue-600"></div>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mt-6">
