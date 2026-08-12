@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram } from "lucide-react"
 
 const programs = [
   { name: "WESCCU Newsletter", href: "/programs/newsletter" },
@@ -42,7 +42,9 @@ export function Footer() {
                 <Facebook className="w-5 h-5 text-gray-400" />
               </a>
               <a href="https://x.com/stcci_ghana" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-400 hover:bg-blue-400/10 transition-colors" title="X (Twitter)" aria-label="X (Twitter)">
-                <Twitter className="w-5 h-5 text-gray-400" />
+                <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
               </a>
               <a href="#" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:border-blue-600 hover:bg-blue-600/10 transition-colors" title="LinkedIn" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5 text-gray-400" />
