@@ -140,10 +140,7 @@ export default function ContactPage() {
                 Inquiry Form
               </h2>
               <div className="w-20 h-1 bg-blue-600 mb-8"></div>
-              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-                <input type="hidden" name="subject" value="New Contact Form Submission from STCCI Website" />
-                <input type="hidden" name="redirect" value="https://stcci-website.com/thank-you" />
+              <form action="mailto:niikpani@yahoo.com" method="POST" encType="text/plain" className="space-y-6">
 
                 <div>
                   <label htmlFor="name" className="block text-sm font-bold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
