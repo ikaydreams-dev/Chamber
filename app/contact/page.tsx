@@ -63,7 +63,7 @@ export default function ContactPage() {
                         Telephone
                       </h3>
                       <p className="text-gray-600 dark:text-gray-400">
-                        +233 XXX XXX XXX
+                        +233 24 469 4781
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
                         Monday - Friday: 8:00 AM - 5:00 PM
@@ -179,7 +179,7 @@ export default function ContactPage() {
                     id="phone"
                     name="phone"
                     className="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-gray-300 dark:border-slate-600 focus:outline-none focus:border-blue-600 text-gray-900 dark:text-white"
-                    placeholder="+233 XXX XXX XXX"
+                    placeholder="+233 24 469 4781"
                   />
                 </div>
 
