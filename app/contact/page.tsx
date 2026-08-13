@@ -148,7 +148,9 @@ export default function ContactPage() {
                 Inquiry Form
               </h2>
               <div className="w-20 h-1 bg-blue-600 mb-8"></div>
-              <form action="mailto:niikpani@yahoo.com" method="POST" encType="text/plain" className="space-y-6">
+              <form action="https://formsubmit.co/niikpani@yahoo.com" method="POST" className="space-y-6">
+                <input type="hidden" name="_subject" value="New Contact Form Submission - STCCI Website" />
+                <input type="hidden" name="_captcha" value="false" />
 
                 <div>
                   <label htmlFor="name" className="block text-sm font-bold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
