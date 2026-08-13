@@ -27,7 +27,7 @@ export function Footer() {
           <div>
             <div className="mb-6">
               <img
-                src="/logo.png"
+                src="/logo.jpeg"
                 alt="STCCI"
                 className="h-auto w-56"
               />

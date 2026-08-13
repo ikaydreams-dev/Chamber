@@ -26,12 +26,9 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="./logo.png"
+              src="./logo.jpeg"
               alt="STCCI - Sekondi-Takoradi Chamber of Commerce & Industry"
               className="h-16 w-auto object-contain"
-              onError={(e) => {
-                e.currentTarget.src = './logo.jpeg'
-              }}
             />
           </Link>
 
