@@ -17,6 +17,7 @@ import {
   Award,
   Globe,
   Building2,
+  Banknote,
 } from "lucide-react"
 
 const programs = [
@@ -26,6 +27,13 @@ const programs = [
     description: "Manage your business anywhere with our mobile platform",
     href: "/programs/app",
     color: "from-purple-500 to-purple-700",
+  },
+  {
+    icon: Banknote,
+    title: "Project Financing",
+    description: "Financial solutions and support for business projects",
+    href: "/programs/project-financing",
+    color: "from-emerald-500 to-emerald-700",
   },
   {
     icon: GraduationCap,

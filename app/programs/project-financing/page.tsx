@@ -1,7 +1,7 @@
-import { Newspaper, ArrowLeft } from "lucide-react"
+import { Banknote, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
-export default function NewsletterPage() {
+export default function ProjectFinancingPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -14,16 +14,16 @@ export default function NewsletterPage() {
         </Link>
 
         <div className="text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 mb-6">
-            <Newspaper className="w-10 h-10 text-white" />
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-emerald-700 mb-6">
+            <Banknote className="w-10 h-10 text-white" />
           </div>
 
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            STCCI Newsletter
+            Project Financing
           </h1>
 
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-            Monthly business intelligence and updates for the Western Region
+            Financial solutions and support for business projects and initiatives
           </p>
 
           <div className="inline-block bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 px-6 py-3 mb-8">
@@ -33,7 +33,7 @@ export default function NewsletterPage() {
           </div>
 
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            We're preparing this page with comprehensive information about our newsletter program.
+            We're preparing this page with comprehensive information about our project financing services.
             Check back soon for updates.
           </p>
         </div>
